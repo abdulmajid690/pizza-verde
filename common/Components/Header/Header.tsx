@@ -44,12 +44,6 @@ const Header = () => {
             />
             <span className="logo-text">Pizza Verde</span>
           </div>
-          <div className="nav-links">
-            <Link href="/menu">Menu</Link>
-            <Link href="#">Deals</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact</Link>
-          </div>
           <div className="header-actions">
             <input
               type="text"

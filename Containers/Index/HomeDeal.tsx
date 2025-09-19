@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { fixedPrice } from "@/common/libs/fixedPrice";
+import Image from "next/image";
+
+import pizza1 from '../../common/images/p-1.png';
+import pizza2 from '../../common/images/p-2.png';
+import pizza3 from '../../common/images/p-3.png';
+import pizza4 from '../../common/images/p-4.png';
 
 const HomeDeal = () => {
   const largePizzaPrice = fixedPrice(2499);
@@ -14,7 +20,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">Popular</div>
           <div className="deal-img-new">
-            <i className="fas fa-pizza-slice"></i>
+            <Image src={pizza1} className="w-[65%]" />
           </div>
           <div className="deal-content-new">
             <h3>Large Pizza Feast</h3>
@@ -33,7 +39,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">New</div>
           <div className="deal-img-new">
-            <i className="fas fa-pizza-slice"></i>
+            <Image src={pizza3} className="w-[65%]" />
           </div>
           <div className="deal-content-new">
             <h3>Medium Family Deal</h3>
@@ -51,7 +57,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">Value</div>
           <div className="deal-img-new">
-            <i className="fas fa-pizza-slice"></i>
+            <Image src={pizza4} className="w-[65%]" />
           </div>
           <div className="deal-content-new">
             <h3>Personal Lunch Box</h3>

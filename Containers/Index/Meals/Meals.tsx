@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { fixedPrice } from "@/common/libs/fixedPrice";
+import Image from "next/image";
 
 const Meals = () => {
   let mealbox1Price = fixedPrice(3699);
@@ -14,7 +15,7 @@ const Meals = () => {
       <div className="meal-boxes-new">
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <i className="fas fa-utensils"></i>
+            <Image className="w-full" src={require('../../../common/images/family.jpg')} />
           </div>
           <div className="meal-content-new">
             <h3>Family Feast Box</h3>
@@ -27,7 +28,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <i className="fas fa-heart"></i>
+            <Image className="w-full" src={require('../../../common/images/day.jpeg')} />
           </div>
           <div className="meal-content-new">
             <h3>Date Night Special</h3>
@@ -40,7 +41,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <i className="fas fa-users"></i>
+            <Image className="w-full" src={require('../../../common/images/party.jpg')} />
           </div>
           <div className="meal-content-new">
             <h3>Party Pack</h3>
@@ -53,7 +54,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <i className="fas fa-user"></i>
+            <Image className="w-full" src={require('../../../common/images/solo.jpeg')} />
           </div>
           <div className="meal-content-new">
             <h3>Solo Dinner</h3>

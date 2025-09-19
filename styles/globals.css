@@ -1643,38 +1643,6 @@ ul {
   transform: rotate(5deg) scale(1.1);
 }
 
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--project-dark);
-  font-weight: 600;
-  transition: var(--project-transition);
-  position: relative;
-}
-
-.nav-links a:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--project-secondary);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--project-secondary);
-}
-
-.nav-links a:hover:after {
-  width: 100%;
-}
-
 .header-actions {
   display: flex;
   align-items: center;
@@ -1834,12 +1802,6 @@ ul {
     gap: 20px;
   }
 
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .header-actions {
     flex-direction: column;
     gap: 12px;
@@ -1856,4 +1818,1153 @@ ul {
   }
 }
 
+/* Modern Hero Section - Pizza Happiness Design */
+.modern-hero {
+  background: linear-gradient(135deg, #fff5f3 0%, #f8f9fa 100%);
+  padding: 80px 0 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-badge {
+  background: linear-gradient(135deg, #ff6b47, #ff8a50);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero-title .highlight {
+  color: #ff6b47;
+}
+
+.hero-description {
+  color: #718096;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b47, #ff8a50);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 71, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 71, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ff6b47;
+  padding: 15px 30px;
+  border: 2px solid #ff6b47;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #ff6b47;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Achievement Badges */
+.achievement-badges {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.badge-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff6b47, #ff8a50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.badge-text {
+  text-align: left;
+}
+
+.badge-title {
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.badge-year {
+  color: #718096;
+  font-size: 12px;
+}
+
+/* Hero Image Section */
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-bg {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #ff6b47, #ff8a50);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pizza-person {
+  position: relative;
+  z-index: 2;
+}
+
+.person-placeholder {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-icon {
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.pizza-hand {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  font-size: 60px;
+  animation: bounce 2s infinite;
+}
+
+.floating-slice-1, .floating-slice-2 {
+  position: absolute;
+  font-size: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-slice-1 {
+  top: 50px;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.floating-slice-2 {
+  top: 80px;
+  right: -30px;
+  animation-delay: 1.5s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+/* Responsive Design for Modern Hero */
+@media (max-width: 968px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .circular-bg {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .achievement-badges {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .circular-bg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .person-placeholder {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .person-icon {
+    font-size: 120px;
+  }
+  
+  .pizza-hand {
+    font-size: 40px;
+    bottom: 30px;
+    right: 10px;
+  }
+  
+  .floating-slice-1, .floating-slice-2 {
+    font-size: 30px;
+  }
+  
+  .achievement-badges {
+    gap: 20px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .modern-hero {
+    padding: 60px 0 40px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .achievement-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .badge-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
 /* ============ End Enhanced Home Layout Styles ==================== */
+
+/* ============ New Pizza Hero Section Styles ==================== */
+.pizza-hero {
+  background: linear-gradient(135deg, #fff8f6 0%, #f8f9fa 100%);
+  padding: 80px 0 60px;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero-content {
+  z-index: 2;
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero-badge {
+  background: linear-gradient(135deg, #268240, #32a852);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(38, 130, 64, 0.3);
+  animation: fadeInDown 1s ease-out 0.2s both;
+}
+
+.hero-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: #2d3748;
+  margin-bottom: 25px;
+  font-weight: 400;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-title .highlight {
+  color: #90011e;
+  position: relative;
+}
+
+.hero-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(135deg, rgba(144, 1, 30, 0.3), rgba(255, 107, 71, 0.3));
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.hero-description {
+  color: #718096;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 45px;
+  max-width: 450px;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.btn-order-now {
+  background: linear-gradient(135deg, #90011e, #b8021f);
+  color: white;
+  padding: 18px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(144, 1, 30, 0.3);
+  position: relative;
+  overflow: hidden;
+  min-width: 180px;
+  text-align: center;
+}
+
+.btn-order-now::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-order-now:hover::before {
+  left: 100%;
+}
+
+.btn-order-now:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(144, 1, 30, 0.4);
+  background: linear-gradient(135deg, #7a0118, #90011e);
+}
+
+/* Achievement Badges */
+.achievement-badges {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.badge-item:hover {
+  transform: translateY(-5px);
+}
+
+.badge-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.badge-icon.trophy {
+  background: linear-gradient(135deg, #ffd700, #ffed4a);
+}
+
+.badge-icon.pizza {
+  background: linear-gradient(135deg, #268240, #32a852);
+}
+
+.badge-icon.award {
+  background: linear-gradient(135deg, #90011e, #b8021f);
+}
+
+.badge-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.badge-text {
+  text-align: left;
+}
+
+.badge-title {
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.badge-year {
+  color: #718096;
+  font-size: 13px;
+}
+
+/* Hero Visual Section */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 1s ease-out 0.5s both;
+}
+
+.pizza-circle {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #90011e, #b8021f);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  box-shadow: 0 20px 60px rgba(144, 1, 30, 0.3);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.pizza-person-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizza-person {
+  position: relative;
+  z-index: 2;
+}
+
+.person-avatar {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Person's Head and Hair */
+.person-head {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.hair {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 160px;
+  height: 130px;
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border-radius: 80px 80px 60px 60px;
+  z-index: 1;
+}
+
+.hair::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  width: 40px;
+  height: 80px;
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border-radius: 20px 5px 5px 20px;
+  z-index: 1;
+}
+
+.hair::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  width: 40px;
+  height: 80px;
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border-radius: 5px 20px 20px 5px;
+  z-index: 1;
+}
+
+/* Person's Face */
+.face {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 100px;
+  height: 120px;
+  background: linear-gradient(135deg, #FDBCB4, #F4A689);
+  border-radius: 50px;
+  z-index: 2;
+}
+
+/* Glasses */
+.glasses {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  width: 80px;
+  height: 30px;
+  z-index: 3;
+}
+
+.glasses-frame {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #DC143C;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glasses-frame.left {
+  left: 5px;
+}
+
+.glasses-frame.right {
+  right: 5px;
+}
+
+.glasses-bridge {
+  position: absolute;
+  top: 12px;
+  left: 35px;
+  width: 10px;
+  height: 3px;
+  background: #DC143C;
+  border-radius: 2px;
+}
+
+/* Eyes */
+.eyes {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 70px;
+  height: 15px;
+}
+
+.eye {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  animation: blink 4s ease-in-out infinite;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+}
+
+.left-eye {
+  left: 8px;
+}
+
+.right-eye {
+  right: 8px;
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  width: 30px;
+  height: 20px;
+}
+
+.mouth.surprised {
+  width: 15px;
+  height: 15px;
+  left: 42px;
+  background: #000;
+  border-radius: 50%;
+  animation: surprised-mouth 3s ease-in-out infinite;
+}
+
+/* Person's Body */
+.person-body {
+  position: relative;
+  width: 140px;
+  height: 180px;
+}
+
+.red-scarf {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(135deg, #DC143C, #B71C1C);
+  border-radius: 10px;
+  z-index: 2;
+  transform: rotate(-5deg);
+}
+
+.red-scarf::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 15px;
+  height: 25px;
+  background: linear-gradient(135deg, #DC143C, #B71C1C);
+  border-radius: 3px;
+  transform: rotate(15deg);
+}
+
+.white-shirt {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 80px;
+  height: 120px;
+  background: linear-gradient(135deg, #FFFFFF, #F5F5F5);
+  border-radius: 15px 15px 5px 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hands and Pizza */
+.hands {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  top: 80px;
+}
+
+.hand {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, #FDBCB4, #F4A689);
+  border-radius: 50%;
+  bottom: 10px;
+}
+
+.left-hand {
+  left: 20px;
+  transform: rotate(-10deg);
+}
+
+.right-hand {
+  right: 20px;
+  transform: rotate(10deg);
+}
+
+.pizza-slice-held {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  animation: pizza-wiggle 2s ease-in-out infinite;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));
+  z-index: 3;
+}
+
+/* Floating Pizza Slices */
+.floating-pizza {
+  position: absolute;
+  font-size: 45px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.slice-1 {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.slice-2 {
+  top: 25%;
+  right: 8%;
+  animation-delay: 1s;
+}
+
+.slice-3 {
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.slice-4 {
+  bottom: 35%;
+  right: 12%;
+  animation-delay: 3s;
+}
+
+/* Background Decorative Elements */
+.bg-decoration {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: rotate 20s linear infinite;
+}
+
+.decoration-1 {
+  width: 200px;
+  height: 200px;
+  background: #268240;
+  top: -50px;
+  right: -50px;
+}
+
+.decoration-2 {
+  width: 150px;
+  height: 150px;
+  background: #90011e;
+  bottom: -30px;
+  left: -30px;
+  animation-direction: reverse;
+}
+
+.decoration-3 {
+  width: 100px;
+  height: 100px;
+  background: #ff6b47;
+  top: 50%;
+  right: -20px;
+  animation-delay: -5s;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes pizza-wiggle {
+  0%, 100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-50%) rotate(-3deg);
+  }
+  75% {
+    transform: translateX(-50%) rotate(3deg);
+  }
+}
+
+@keyframes blink {
+  0%, 90%, 100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes surprised-mouth {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  66% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design for Pizza Hero */
+@media (max-width: 1024px) {
+  .hero-layout {
+    gap: 50px;
+  }
+  
+  .pizza-circle {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3.2rem;
+  }
+  
+  .pizza-circle {
+    width: 380px;
+    height: 380px;
+  }
+  
+  .achievement-badges {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pizza-hero {
+    padding: 60px 0 40px;
+    min-height: auto;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+  }
+  
+  .pizza-circle {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .person-avatar {
+    width: 250px;
+    height: 320px;
+  }
+  
+  .person-head {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .hair {
+    width: 130px;
+    height: 110px;
+  }
+  
+  .face {
+    width: 80px;
+    height: 100px;
+  }
+  
+  .person-body {
+    width: 120px;
+    height: 150px;
+  }
+  
+  .pizza-slice-held {
+    font-size: 50px;
+  }
+  
+  .floating-pizza {
+    font-size: 35px;
+  }
+  
+  .achievement-badges {
+    gap: 25px;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .btn-order-now {
+    width: 220px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .pizza-hero {
+    padding: 40px 0 30px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  
+  .pizza-circle {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .person-head {
+    width: 80px;
+    height: 100px;
+  }
+  
+  .hair {
+    width: 110px;
+    height: 90px;
+  }
+  
+  .face {
+    width: 70px;
+    height: 80px;
+  }
+  
+  .person-body {
+    width: 100px;
+    height: 130px;
+  }
+  
+  .pizza-slice-held {
+    font-size: 40px;
+  }
+  
+  .floating-pizza {
+    font-size: 28px;
+  }
+  
+  .achievement-badges {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .badge-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .bg-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-layout {
+    gap: 30px;
+  }
+  
+  .hero-title {
+    font-size: 1.9rem;
+  }
+  
+  .pizza-circle {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .floating-pizza {
+    font-size: 22px;
+  }
+}
+
+/* ============ End New Pizza Hero Section Styles ==================== */
