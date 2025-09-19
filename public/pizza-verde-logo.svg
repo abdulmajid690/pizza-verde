@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="280" viewBox="0 0 200 280">
+  <!-- Leaves -->
+  <ellipse cx="75" cy="40" rx="18" ry="35" fill="#268240" transform="rotate(-20 75 40)"/>
+  <ellipse cx="125" cy="40" rx="18" ry="35" fill="#268240" transform="rotate(20 125 40)"/>
+  
+  <!-- Leaf details -->
+  <path d="M75 25 Q82 35, 75 50 Q68 35, 75 25" fill="#2e8b57" transform="rotate(-20 75 40)"/>
+  <path d="M125 25 Q132 35, 125 50 Q118 35, 125 25" fill="#2e8b57" transform="rotate(20 125 40)"/>
+  
+  <!-- Pizza slice left -->
+  <path d="M40 80 A60 60 0 0 1 100 140 L100 80 Z" fill="#90011E"/>
+  
+  <!-- Pizza slice right -->
+  <path d="M160 80 A60 60 0 0 0 100 140 L100 80 Z" fill="#90011E"/>
+  
+  <!-- Pizza toppings -->
+  <circle cx="70" cy="100" r="6" fill="white" stroke="#90011E" stroke-width="2"/>
+  <circle cx="130" cy="95" r="5" fill="#f8f8f8"/>
+  <circle cx="85" cy="120" r="4" fill="white"/>
+  <circle cx="115" cy="115" r="4" fill="#f8f8f8"/>
+  
+  <!-- Text PIZZA -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="36" font-weight="900" fill="#90011E">PIZZA</text>
+  
+  <!-- Text VERDE -->
+  <text x="100" y="220" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="36" font-weight="900" fill="#268240">VERDE</text>
+</svg>
