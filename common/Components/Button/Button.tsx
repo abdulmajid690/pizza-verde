@@ -3,7 +3,7 @@ import React from "react";
 
 interface ButtonProps {
   title: string;
-  id: number;
+  id?: number;
   bgColor?: string;
   padding?: string;
   flex?: string;
@@ -11,7 +11,7 @@ interface ButtonProps {
   type?: string;
   path?: string;
   size?: string;
-  handleFunction: (id: number) => void;
+  handleFunction?: (id: number) => void;
 }
 
 const Button = ({
@@ -31,7 +31,7 @@ const Button = ({
         //@ts-ignore
         type={type}
         className={`${bgColor} ${padding}`}
-        onClick={() => handleFunction(id)}
+        onClick={() => handleFunction ? handleFunction(id ? id : 0) : console.log('button')}
       >
         {title}{" "}
         {icon ? (

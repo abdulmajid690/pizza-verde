@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 
 const Search_menu = () => {
   const dispatch = useDispatch();
-  const { push, back } = useRouter();
+  const { push, back, pathname } = useRouter();
   const [inputValue, setInputValue] = useState("");
 
   const handleSearch = (event: any) => {
@@ -28,7 +28,7 @@ const Search_menu = () => {
       targetUrl = "/menu";
     }
 
-    push(targetUrl); 
+    push(targetUrl);
   };
   return (
     <form
@@ -55,7 +55,7 @@ const Search_menu = () => {
               type="submit"
               className="cursor-pointer absolute right-4 w-6"
             >
-              <Image src={searchIcon} alt="Profile"  />
+              <Image src={searchIcon} alt="Profile" />
             </button>
           </div>
         </div>

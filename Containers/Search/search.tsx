@@ -17,12 +17,12 @@ import ErrorPage from "@/common/Components/ErrorPage/ErrorPage";
 type SearchProps = {
   menuItem: any;
   searchItem: string | string[] | undefined;
-  singleMenuItem:any;
+  singleMenuItem?: any;
 };
 const Search: React.FC<SearchProps> = ({ menuItem, searchItem }) => {
   console.log("Received menuItem in Search:", menuItem);
   //@ts-ignore
-  const filteredItems = menuItem?.filter((singleMenuItem) =>singleMenuItem?.title?.toLowerCase().includes(searchItem.toLowerCase())
+  const filteredItems = menuItem?.filter((singleMenuItem) => singleMenuItem?.title?.toLowerCase().includes(searchItem.toLowerCase())
   );
   const showStickyCart = filteredItems?.length > 0;
 
@@ -78,7 +78,7 @@ const Search: React.FC<SearchProps> = ({ menuItem, searchItem }) => {
               </div>
             ))
           ) : (
-            
+
             <ErrorPage
               message="No items found"
               description="Sorry, we couldn't find any matching products."

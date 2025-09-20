@@ -20,7 +20,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">Popular</div>
           <div className="deal-img-new">
-            <Image src={pizza1} className="w-[65%]" />
+            <Image src={pizza1} className="w-[65%]" alt="" />
           </div>
           <div className="deal-content-new">
             <h3>Large Pizza Feast</h3>
@@ -39,7 +39,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">New</div>
           <div className="deal-img-new">
-            <Image src={pizza3} className="w-[65%]" />
+            <Image src={pizza3} className="w-[65%]" alt="" />
           </div>
           <div className="deal-content-new">
             <h3>Medium Family Deal</h3>
@@ -57,7 +57,7 @@ const HomeDeal = () => {
         <div className="deal-card-new">
           <div className="deal-badge">Value</div>
           <div className="deal-img-new">
-            <Image src={pizza4} className="w-[65%]" />
+            <Image src={pizza4} className="w-[65%]" alt="" />
           </div>
           <div className="deal-content-new">
             <h3>Personal Lunch Box</h3>

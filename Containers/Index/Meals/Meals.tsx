@@ -15,7 +15,7 @@ const Meals = () => {
       <div className="meal-boxes-new">
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <Image className="w-full" src={require('../../../common/images/family.jpg')} />
+            <Image className="w-full" src={require('../../../common/images/family.jpg')} alt="" />
           </div>
           <div className="meal-content-new">
             <h3>Family Feast Box</h3>
@@ -28,7 +28,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <Image className="w-full" src={require('../../../common/images/day.jpeg')} />
+            <Image className="w-full" src={require('../../../common/images/day.jpeg')} alt="" />
           </div>
           <div className="meal-content-new">
             <h3>Date Night Special</h3>
@@ -41,7 +41,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <Image className="w-full" src={require('../../../common/images/party.jpg')} />
+            <Image className="w-full" src={require('../../../common/images/party.jpg')} alt="" />
           </div>
           <div className="meal-content-new">
             <h3>Party Pack</h3>
@@ -54,7 +54,7 @@ const Meals = () => {
         </div>
         <div className="meal-card-new">
           <div className="meal-img-new">
-            <Image className="w-full" src={require('../../../common/images/solo.jpeg')} />
+            <Image className="w-full" src={require('../../../common/images/solo.jpeg')} alt="" />
           </div>
           <div className="meal-content-new">
             <h3>Solo Dinner</h3>

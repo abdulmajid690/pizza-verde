@@ -15,36 +15,42 @@ const AddressDetails = () => {
             type="text"
             name="first_name"
             style="text-white"
+            value=""
           />
           <InputField
             label="Last Name *"
             type="text"
             name="last_name"
             style="text-white"
+            value=""
           />
           <InputField
             label="Email *"
             type="email"
             name="email"
             style="text-white"
+            value=""
           />
           <InputField
             label="Mobile *"
             type="text"
             name="mobile"
             style="text-white"
+            value=""
           />
           <InputField
             label="Address *"
             type="text"
             name="first_name"
             style="text-white"
+            value=""
           />
           <InputField
             label="City *"
             type="text"
             name="city"
             style="text-white"
+            value=""
           />
         </div>
         <div className="flex-1 bg-[#4D4E53] rounded-[7px] px-5 pt-5">
@@ -54,12 +60,14 @@ const AddressDetails = () => {
             type="text"
             name="country"
             style="text-white"
+            value=""
           />
           <InputField
             label="Post Code *"
             type="text"
             name="post_code"
             style="text-white"
+            value=""
           />
           <div className="other-instruction flex flex-col">
             <label htmlFor="" className="text-white">
